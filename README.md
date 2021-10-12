@@ -12,8 +12,8 @@ Java JDK SE 17 was released on September 14, 2021 as an LTS release.
 * Oracle proposed shifting cadence every 2 years instead
  * https://blogs.oracle.com/java/post/moving-the-jdk-to-a-two-year-lts-cadence
 * Non LTS release cadence is 6 months
- * Java 18 in 6 months
- * Java 19 in 12 months 
- * etc.
+  * Java 18 in 6 months
+  * Java 19 in 12 months 
+  * etc.
 
 
