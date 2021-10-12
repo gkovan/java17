@@ -18,10 +18,17 @@ Java JDK SE 17 was released on September 14, 2021 as an LTS release.
 ## What is new in Java 17
 
 * Records
+  * Classes that act as transparent carriers for immutable data
+  * Includes an accessor for each component with the same name and return type that returns exactly the component's value (or the API doesn't model the state)
+  * Includes an accessible constructor whose parameter list matches the components
+  * Includes methods such as `equals`, `hashCode` and `toString`
+  * Cleaner and less code
+  * https://nipafx.dev/java-record-semantics/
+  * https://openjdk.java.net/jeps/395
 
-```
-curl localhost:9080/customer | jq .
-```
+  ```
+  curl localhost:9080/customer | jq .
+  ```
 
 
 * Text Blocks
