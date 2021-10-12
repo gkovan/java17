@@ -72,6 +72,9 @@ public class TextBlockController {
     	return starWarsMoviesJson;
     }
     
+    // Very difficult to read.
+    // Escape characters
+    // New line characters
     private static String oldJsonString = 
 "			{\n"
 + "				  \"movies\": [{\n"
