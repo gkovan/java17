@@ -15,6 +15,8 @@ public class CustomerRecordControlller {
 		String country = "USA";
 		Address address = new Address(street,city,state,zip,country);
 		Customer customer1 = new Customer("Gerry", "Kovan", "3473473437",address);
+		System.out.println(customer1.firstName() + " " + customer1.lastName());
+		System.out.println(customer1.toString());
 		return customer1;
 	}
 }
