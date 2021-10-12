@@ -47,4 +47,13 @@ Java JDK SE 17 was released on September 14, 2021 as an LTS release.
    curl localhost:9080/sql
    ```
    
+ * Helpful NPEs (null pointer exceptions)
+   * Shows which variable is null
+   * Previously null pointer exceptions were ambiguous
+   * Introduced in Java 14 
+   * https://openjdk.java.net/jeps/358 
    
+   ```
+   curl localhost:9080/fullname
+   curl localhost:9080/npe
+   ```
