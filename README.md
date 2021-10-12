@@ -32,15 +32,19 @@ Java JDK SE 17 was released on September 14, 2021 as an LTS release.
 
 
 * Text Blocks
+  * Adding JSON snippets or multi line SQL queries is much easier thanks to textt blocks.
+  * No need to add escape characters, new line characters or concatenation
+  * https://openjdk.java.net/jeps/378
+   ```
+   curl localhost:9080/movies | jq .
+   ```
 
-```
-curl localhost:9080/movies | jq .
-```
+   ```
+   curl localhost:9080/html
+   ```
 
-```
-curl localhost:9080/html
-```
-
-```
-curl localhost:9080/sql
-```
+   ```
+   curl localhost:9080/sql
+   ```
+   
+   
