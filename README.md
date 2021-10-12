@@ -57,3 +57,30 @@ Java JDK SE 17 was released on September 14, 2021 as an LTS release.
    curl localhost:9080/fullname
    curl localhost:9080/npe
    ```
+   
+* Pattern matching for instanceof
+  * Enhance the Java programming language with pattern matching for the instanceof operator
+  * Introduced in Java 14
+  * https://openjdk.java.net/jeps/394
+  * Example:
+  
+  Before Java 17
+  ```
+  if (obj instanceof String) {
+    String s = (String) obj;    // grr...
+    ...
+   }
+  ```
+  
+  Three things are going on here:
+  1. Test - is obj a String?
+  2. Conversion  - casting obj to String
+  3. Declaration of new variable - declaration of a new local variable (s) so that we can use the string value
+  
+  With Java 17:
+  ```
+  if (obj instanceof String s) {
+    // Let pattern matching do the work!
+    ...
+   }
+  ```
