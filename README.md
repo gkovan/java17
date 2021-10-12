@@ -13,7 +13,8 @@ Java JDK SE 17 was released on September 14, 2021 as an LTS release.
 * Non LTS release cadence is 6 months
   * Java 18 in 6 months
   * Java 19 in 12 months 
-  * etc.
+  * Java 20 in 18 months
+  * Java 21 in 24 months (next LTS release)
 
 ## What is new in Java 17
 
@@ -90,5 +91,11 @@ Java JDK SE 17 was released on September 14, 2021 as an LTS release.
   
   * Spring Framework 6 and Spring Boot 3 will require Java 17 as a baseline
   * Spring Framework 6 and Spring Boot 3 will be available in Q4 2022 timeframe.
+  * Current Spring Boot version up to 2.6.0 support Java 17
+  * See: https://spring.io/blog/2021/09/02/a-java-17-and-jakarta-ee-9-baseline-for-spring-framework-6
+  
+  ### Quarkus
+  
+  * ???
   
   
