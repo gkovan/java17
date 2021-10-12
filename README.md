@@ -79,8 +79,16 @@ Java JDK SE 17 was released on September 14, 2021 as an LTS release.
   
   With Java 17:
   ```
-  if (obj instanceof String s) {
-    // Let pattern matching do the work!
+  if (obj instanceof String s) {   // Let pattern matching do the work! 
     ...
    }
   ```
+  
+  ## Java Frameworks and Java 17
+  
+  ### Spring
+  
+  * Spring Framework 6 and Spring Boot 3 will require Java 17 as a baseline
+  * Spring Framework 6 and Spring Boot 3 will be available in Q4 2022 timeframe.
+  
+  
