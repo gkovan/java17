@@ -1,6 +1,5 @@
 package com.gk.java17.records;
 
-import com.gk.java17.records.RecordId;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -11,6 +10,17 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class RecordTests {
 
+    @Test
+    public void testDataRecordEquals() {
+        RecordId recordId01 = new RecordId("r-01");
+        Long currentTimeStamp =  System.currentTimeMillis();
+        DataRecord dataRecord1 = new DataRecord(recordId01, currentTimeStamp,  "data1");
+        DataRecord dataRecord2 = new DataRecord(recordId01, currentTimeStamp,  "data1");
+
+        assertTrue(dataRecord1.equals(dataRecord2));
+
+    }
+    
     @Test
     public void testEquals() {
         RecordId recordId01 = new RecordId("r-01");
